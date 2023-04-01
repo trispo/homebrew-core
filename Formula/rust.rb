@@ -9,10 +9,8 @@ class Rust < Formula
 
     # From https://github.com/rust-lang/rust/tree/#{version}/src/tools
     resource "cargo" do
-      # 0.69.1 was not tagged, so the revision shown on [^1] is used here.
-      # [^1] https://github.com/rust-lang/rust/tree/1.68.2/src/tools
       url "https://github.com/rust-lang/cargo.git",
-          # tag:      "0.69.1",
+          tag:      "0.69.1",
           revision: "6feb7c9cfc0c5604732dba75e4c3b2dbea38e8d8"
     end
   end
